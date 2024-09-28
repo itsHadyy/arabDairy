@@ -128,7 +128,7 @@ hr {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, #4b9ad2e5 10px, #ffffff00);
+    background: linear-gradient(to bottom, #4b9ad28c 1%, #ffffff00);
     /* Adjust gradient colors and opacity as needed */
 }
 
@@ -153,6 +153,7 @@ hr {
 .container {
     padding: 40px 80px;
     color: #000;
+    overflow: hidden;
 }
 
 .home01 {
@@ -220,7 +221,7 @@ p {
     font-weight: 100;
 }
 
-.home02 .btn{
+.home02 .btn {
     width: 50%;
 }
 
@@ -419,11 +420,11 @@ footer hr {
     text-align: center;
 }
 
-.about01 img{
+.about01 img {
     width: 100%;
 }
 
-.about01 h1{
+.about01 h1 {
     grid-column: auto / span 2;
 }
 
@@ -486,29 +487,29 @@ footer hr {
     text-align: center;
 }
 
-.about05 img{
+.about05 img {
     width: 30%;
 }
 
-.about05 div img{
+.about05 div img {
     width: 40%;
     margin: 20px;
 }
 
-.brands01 div{
+.brands01 div {
     text-align: center;
 }
 
-.brands01 div img{
+.brands01 div img {
     width: 100%;
     margin: auto;
 }
 
-.registered-img{
+.registered-img {
     width: 70% !important;
 }
 
-.recipes img{
+.recipes img {
     border-radius: 20px;
     width: 70%;
     margin: auto;
@@ -525,15 +526,145 @@ footer hr {
     gap: 60px;
 }
 
-.recipes .btn{
-    width: 50%;
+.recipes .btn {
+    margin: 10px auto;
+    width: 60%;
 }
 
-.contact{
+.contact {
     text-align: center;
 }
 
-.contact-container{
+.contact h1{
+    margin: 0;
+    color: var(--secondary);
+}
+
+.form table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.form td {
+    padding: 0 20px;
+    padding-top: 20px;
+}
+
+.form input,
+.form textarea {
+    background-color: var(--secondary);
+    color: #000;
+    width: 100%;
+    font-size: 16px;
+    padding: 8px 14px;
+    margin: auto;
+    border: 0;
+    border-radius: 6px;
+    border-bottom: 2px solid var(--primary);
+    transition: all 0.5s ease-in-out;
+    resize: none;
+}
+
+.contact p{
+    line-height: 36px;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.contact-container {
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.contact-container div {
+    width: 40%;
+}
+
+.contact-container div:nth-child(1) {
+    width: 60%;
+}
+
+.contact-container hr {
+    width: 2px;
+    padding: 280px 0;
+}
+
+.form input[type=submit] {
+    color: var(--primary);
+}
+
+.location-sign {
+    width: 30px;
+    margin-right: 20px;
+}
+
+.info {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.info td {
+    padding: 10px 0;
+    vertical-align: top;
+}
+
+.info h2{
+    color: var(--secondary);
+}
+
+.mediaContainer{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(80px, 1fr));
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin: 40px auto;
+}
+
+.ad{
+    width: 100%;
+    text-align: center;
+}
+
+video{
+    border-radius: 20px;
+}
+
+.recipeContainer{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(80px, 1fr));
+    gap: 60px;
+    margin: 40px auto;
+}
+
+.ingredients{
+    grid-column: auto / span 2;
+    line-height: 36px;
+    font-size: 18px;
+}
+
+.ingredients h3{
+    color: var(--secondary);
+}
+
+.recipeContainer img{
+    border-radius: 20px;
+    width: 100%;
+    float: right;
+}
+
+.arrow{
+    width: 100px;
+    transform: translateX(60px) translateY(-10px);
+}
+
+.back-arrow{
+    font-size: 24px;
+    color: var(--secondary);
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(80px, 1fr));
+    width: fit-content;
+    float: right;
 }
